@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TMS-사원관리시스템</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/tms.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <!-- 로그인페이지 -->
+  <form>
+    <header>사원관리시스템</header>
+    <h2>로그인페이지</h2>
+    <section>
+      <div class="form-group">
+        <label for="id_num">사원번호</label>
+        <input type="id_num" class="form-control" id="id_num" placeholder="사원번호를 입력하세요">
+      </div>
+      <div class="form-group">
+        <label for="pw">비밀번호</label>
+        <input type="password" class="form-control" id="pw" placeholder="비밀번호를 입력하세요">
+      </div>
+      <button type="button" class="btn btn-default" onclick="location.href='list.html'" >로그인</button>
+      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+        비밀번호찾기
+      </button>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">비밀번호찾기</h4>
+            </div>
+            <div class="modal-body">
+              <select>
+                <option value="" selected>사원번호</option></select>
+                <input type="search" name="" value="" >
+                <div class="bs-example">
+          <p>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            확인
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample" aria-expanded="false" style="height: 0px;">
+          <div class="well">
+          사원의 비밀번호는 1234입니다.
+          </div>
+        </div>
+      </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">네</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">아니요</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+    <footer>
+      <small>copyright&copy;song. All rights reserved.</small>
+    </footer>
+</body>
+</html>

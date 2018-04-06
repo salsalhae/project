@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TMS-사원관리시스템</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/tms.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- <style>
+    section{width: 100%;}
+  </style> -->
+</head>
+<body>
+    <header>사원관리시스템</header>
+    <h2>사원목록페이지</h2>
+    <nav>
+      <ul>
+        <li><a href="#">LOGO</a></li>
+        <li><a href="list.html" class="active">사원목록</a></li>
+        <li><a href="insert.html">사원등록</a></li>
+        <li><a href="#">송진혁님 로그인</a></li>
+        <li><a href="index.html">로그아웃</a></li>
+      </ul>
+    </nav>
+
+  <!--  사원목록페이지-->
+
+  <select>
+    <option value="" selected>검색</option>
+    <option value="" >사번</option>
+    <option value="">사원명</option>
+    <option value="">부서명</option>
+    <option value="">입사날짜</option>
+  </select>
+  <input type="search">
+  <div class="bs-example">
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse"
+        data-target="#collapseExample" aria-expanded="false"
+        aria-controls="collapseExample"
+        onclick="location.href='detail.html'">
+        확인
+        </button>
+      </p>
+  </div>
+  <section class="list">
+  <div class="table-responsive" id="my">
+  <table class="table table-striped  table-bordered table-hover">
+        <caption>사원목록페이지</caption>
+        <p>사번 총합:55개</p>
+        <thead>
+          <tr class="mycolor">
+            <th>사번</th>
+            <th>사원명</th>
+            <th>부서명</th>
+            <th>입사날짜</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="detail.html">송진혁</a></td>
+            <td>IT</td>
+            <td>2018.05.05</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+          <td><a href="detail.html">박창희</a></td>
+            <td>국방부</td>
+            <td>2018.05.10</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><a href="detail.html">김지언</a></td>
+            <td>밴드부</td>
+            <td>2018.10.10</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><a href="detail.html">제하경</a></td>
+            <td>동물부</td>
+            <td>2018.10.08</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><a href="detail.html">이동현</a></td>
+            <td>더조은</td>
+            <td>2018.01.17</td>
+          </tr>
+        </tbody>
+      </table>
+      </section>
+      </div>
+      <div class="s1">
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+      </div>
+
+
+
+<footer>
+  <small>copyright&copy;song. All rights reserved.</small>
+</footer>
+
+</body>
+</html>

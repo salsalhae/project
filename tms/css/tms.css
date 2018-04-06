@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* 5개 페이지의 공통 스타일들 */
+footer{font-size: 20px; text-align: center;}
+header{text-align: center; font-size: 30px;color: #000; font-weight: bold;}
+
+
+nav li{text-align: left; list-style: none; float: left; width: 20%;}
+nav{font-weight: bold; color: #000;}
+nav li a{color: #000; font-weight: bold;}
+
+
+h2{font-size: 22px;text-align: center;font-weight: bold; color: #176fc9;}
+
+
+/*  list만 적용한 스타일*/
+tr,th,td{text-align: center; }
+tr:nth-child(1){background: #e44e3f;}
+caption{text-align: center; font-weight: bold; font-size: 30px;}
+#drop6{text-align: right;}
+p{font-weight: bold;}
+caption{color: #000;}
+.s1{text-align: center;}
+section.list{width: 100%;}
+
+
+/*  index만 적용한 스타일*/
+.form-group:nth-child(1){color: #000; font-weight: bold;}
+.form-group:nth-child(2){color: #000; font-weight: bold;}
+
+/*  detail만 적용한 스타일*/
+#num{text-align: right;}
+section{width: 30%;}
+
+/*  update,insert만 적용한 스타일*/

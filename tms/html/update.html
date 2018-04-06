@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TMS-사원관리시스템</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/tms.css">
+  <link rel="stylesheet" href="../js/cal.js">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+
+</head>
+<body>
+  <!--  사원수정-->
+
+      <header>사원관리시스템</header>
+      <h2>수정페이지</h2>
+      <nav>
+        <ul>
+          <li><a href="#">LOGO</a></li>
+          <li><a href="list.html" class="active">사원목록</a>
+          <li><a href="insert.html">사원등록</a></li>
+          <li><a href="#">송진혁님 로그인</a></li>
+          <li><a href="index.html">로그아웃</a></li>
+        </ul>
+      </nav>
+
+  <form>
+<section>
+
+  <div class="form-group">
+    <label for="id_num">사원번호</label>
+    <input type="id_num" class="form-control" id="id_num"  value="1" placeholder="Disabled input here..." disabled>
+
+  </div>
+  <div class="form-group">
+    <label for="pw">비밀번호</label>
+    <input type="password" class="form-control" id="pw" value="0505" >
+  </div>
+  <div class="form-group">
+    <label for="name">사원명</label>
+    <input type="text" class="form-control" id="name" value="송진혁" >
+  </div>
+  <div class="form-group">
+    <label for="num">연봉</label>
+    <input type="text" class="form-control" id="num" value="3000만원">
+  </div>
+  <div class="form-group">
+    <label for="calendar">입사날짜</label>
+    <input type="text" class="form-control"  id="calendar">
+  </div>
+</section>
+  <button type="button" class="btn btn-warning" onclick="location.href='detail.html'">수정</button>
+  <button type="reset" class="btn btn-danger">다시작성</button>
+  <button type="button" class="btn btn-primary" onclick="location.href='list.html'">목록</button>
+</form>
+
+  <footer>
+    <small>copyright&copy;song. All rights reserved.</small>
+  </footer>
+
+  <script>
+   $('#calendar').datepicker();
+ </script>
+
+</body>
+</html>
